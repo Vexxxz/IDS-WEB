@@ -15,10 +15,6 @@
               jost: ["Jost"],
             },
           },
-          screens: {
-            xs: "370px",
-            // => @media (min-width: 640px) { ... }
-          },
         },
       };
     </script>
@@ -33,7 +29,7 @@
           <!-- NAVBAR -->
           <nav class="">
             <ul
-              class="text-white text-lg flex items-center justify-center p-3 pt-12 pb-40 gap-12 font-light tracking-[0.15em] leading-7">
+              class="text-white min-[70px]:text-sm sm:text-lg xl:text-lg flex items-center justify-center p-3 pt-12 min-[70px]:pb-16 sm:pb-40 xl:pb-40 min-[70px]:gap-5 sm:gap-12 xl:gap-12 font-light tracking-[0.15em] leading-7">
               <a href="#">
                 <li>Home</li>
               </a>
@@ -51,13 +47,13 @@
             <img
               src="src/images/ids logo.png"
               alt=""
-              class="container xl:w-[8.5%] xs:w-1/4 sm:w-1/4 pb-5" />
+              class="min-[70px]:w-1/3 sm:w-1/4 xl:w-1/12 pb-5" />
             <h1
-              class="text-[#EFEFEF] font-bold leading-[65px] tracking-[0.2em] xs:text-lg sm:text-4xl xl:text-4xl xs:text-center">
+              class="text-[#EFEFEF] font-bold leading-[65px] tracking-[0.2em] min-[70px]:text-lg sm:text-4xl xl:text-4xl min-[70px]:text-center">
               INFINITY DIMENSION
             </h1>
             <p
-              class="text-white font-light tracking-[0.2em] pt-2 xs:pb-10 sm:pb-28 xl:pb-28 xs:text-center">
+              class="text-white font-light tracking-[0.2em] pt-2 min-[70px]:pb-10 sm:pb-28 xl:pb-28 min-[70px]:text-center">
               "Discover new boundless life in various dimensions within it"
             </p>
           </section>
@@ -79,36 +75,37 @@
         class="h-screen flex flex-col items-center sm:gap-8 xl:gap-52"
         id="aboutus">
         <!-- nav -->
-        <div class="flex xs:pl-7 sm:pl-10 gap-5 items-center">
+        <div
+          class="flex min-[70px]:flex-col min-[70px]: sm:pl-10 min-[70px]:gap-1 xl:gap-5 items-center">
           <p
-            class="text-[#0D0D0D] font-bold xs:text-lg sm:text-2xl xl:text-2xl">
+            class="text-[#0D0D0D] min-[70px]:font-semibold xl:font-bold min-[70px]:text-lg sm:text-2xl xl:text-4xl">
             INFINITY
           </p>
           <p
-            class="w-fit px-4 xs:text-lg sm:text-4xl xl:text-4xl border-4 border-black font-bold flex text-center">
+            class="w-fit min-[70px]:px-2 xl:px-4 min-[70px]:text-lg sm:text-4xl xl:text-4xl min-[70px]:border-2 xl:border-4 border-black min-[70px]:font-semibold xl:font-bold flex text-center">
             IDS
           </p>
           <p
-            class="text-[#0D0D0D] font-bold xs:text-lg sm:text-4xl xl:text-4xl">
+            class="text-[#0D0D0D] min-[70px]:font-semibold xl:font-bold min-[70px]:text-lg sm:text-4xl xl:text-4xl">
             DIMENSION
           </p>
         </div>
 
         <!-- ISI -->
         <div
-          class="flex xs:flex-col sm:flex-col xl:flex-row-reverse xs:gap-5 justify-evenly xs:items-center sm:items-center">
+          class="flex min-[70px]:flex-col sm:flex-col xl:flex-row-reverse min-[70px]:gap-2 justify-evenly min-[70px]:items-center sm:items-center">
           <img
             src="src/images/ids logo.png"
             alt=""
-            class="xs:w-1/3 sm:w-1/3 xl:w-1/6 xs:pt-5" />
+            class="min-[70px]:w-1/3 sm:w-1/3 xl:w-1/5 min-[70px]:pt-2" />
           <div
-            class="xs:w-[75%] sm:w-[40%] xl:w-[40%] flex flex-col gap-3 xs:text-center sm:text-center">
+            class="min-[70px]:w-[90%] sm:w-[40%] xl:w-[40%] flex flex-col gap-3 min-[70px]:text-center sm:text-center">
             <h1
-              class="xs:text-2xl sm:text-[50px] xl:text-[50px] font-bold tracking-widest">
+              class="min-[70px]:text-2xl sm:text-[50px] xl:text-[50px] font-bold min-[70px]:tracking-wider sm:tracking-widest xl:tracking-widest xl:pb-5">
               Infinity Dimension
             </h1>
             <p
-              class="xs:text-left sm:text-justify xl:text-justify text-xl tracking-wider font-semibold">
+              class="min-[70px]:text-center sm:text-justify xl:text-justify min-[70px]:text-base xl:text-xl min-[70px]:tracking-wide sm:tracking-wider xl:tracking-wider font-semibold">
               Adalah discord server yang dibuat untuk menjadi base camp gamer
               diseluruh dunia, kalian bisa mabar, sharing, mendengarkan music,
               dan bersantai disini. terutama untuk gamer Mlbb, Valorant, dan
