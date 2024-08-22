@@ -15,6 +15,10 @@
               jost: ["Jost"],
             },
           },
+          screens: {
+            xs: "370px",
+            // => @media (min-width: 640px) { ... }
+          },
         },
       };
     </script>
@@ -44,12 +48,16 @@
 
           <!-- BODY -->
           <section class="flex flex-col justify-center items-center">
-            <img src="src/images/ids logo.png" alt="" class="w-[8.5%] pb-5" />
+            <img
+              src="src/images/ids logo.png"
+              alt=""
+              class="container xl:w-[8.5%] xs:w-1/4 sm:w-1/4 pb-5" />
             <h1
-              class="text-[#EFEFEF] font-bold leading-[65px] tracking-[0.2em] text-4xl">
+              class="text-[#EFEFEF] font-bold leading-[65px] tracking-[0.2em] xs:text-lg sm:text-4xl xl:text-4xl xs:text-center">
               INFINITY DIMENSION
             </h1>
-            <p class="text-white font-light tracking-[0.2em] pt-2 pb-28">
+            <p
+              class="text-white font-light tracking-[0.2em] pt-2 xs:pb-10 sm:pb-28 xl:pb-28 xs:text-center">
               "Discover new boundless life in various dimensions within it"
             </p>
           </section>
@@ -67,24 +75,40 @@
       </section>
 
       <!-- BODY 2 -->
-      <section class="h-screen flex flex-col items-center gap-52" id="aboutus">
+      <section
+        class="h-screen flex flex-col items-center sm:gap-8 xl:gap-52"
+        id="aboutus">
         <!-- nav -->
-        <div class="flex gap-5 items-center">
-          <p class="text-[#0D0D0D] font-bold text-2xl">INFINITY</p>
+        <div class="flex xs:pl-7 sm:pl-10 gap-5 items-center">
           <p
-            class="w-fit px-4 text-4xl border-4 border-black font-bold flex text-center">
+            class="text-[#0D0D0D] font-bold xs:text-lg sm:text-2xl xl:text-2xl">
+            INFINITY
+          </p>
+          <p
+            class="w-fit px-4 xs:text-lg sm:text-4xl xl:text-4xl border-4 border-black font-bold flex text-center">
             IDS
           </p>
-          <p class="text-[#0D0D0D] font-bold text-2xl">DIMENSION</p>
+          <p
+            class="text-[#0D0D0D] font-bold xs:text-lg sm:text-4xl xl:text-4xl">
+            DIMENSION
+          </p>
         </div>
 
         <!-- ISI -->
-        <div class="flex justify-evenly">
-          <div class="w-[40%] flex flex-col gap-3">
-            <h1 class="text-[50px] font-bold tracking-widest">
+        <div
+          class="flex xs:flex-col sm:flex-col xl:flex-row-reverse xs:gap-5 justify-evenly xs:items-center sm:items-center">
+          <img
+            src="src/images/ids logo.png"
+            alt=""
+            class="xs:w-1/3 sm:w-1/3 xl:w-1/6 xs:pt-5" />
+          <div
+            class="xs:w-[75%] sm:w-[40%] xl:w-[40%] flex flex-col gap-3 xs:text-center sm:text-center">
+            <h1
+              class="xs:text-2xl sm:text-[50px] xl:text-[50px] font-bold tracking-widest">
               Infinity Dimension
             </h1>
-            <p class="text-justify text-xl tracking-wider font-semibold">
+            <p
+              class="xs:text-left sm:text-justify xl:text-justify text-xl tracking-wider font-semibold">
               Adalah discord server yang dibuat untuk menjadi base camp gamer
               diseluruh dunia, kalian bisa mabar, sharing, mendengarkan music,
               dan bersantai disini. terutama untuk gamer Mlbb, Valorant, dan
@@ -92,14 +116,11 @@
               bersantai dan menghabiskan waktumu disini.
             </p>
           </div>
-          <img src="src/images/ids logo.png" alt="" />
         </div>
       </section>
 
       <!-- BODY 3 -->
-       <section class="h-screen bg-black">
-
-       </section>
+      <section class="h-screen bg-black"></section>
     </main>
   </body>
 </html>
